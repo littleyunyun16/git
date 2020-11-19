@@ -28,17 +28,20 @@
     $ git remote add origin git@github.com:michaelliao/learngit.git
     ```
   
-* 在d盘上新建文件夹（或者将本地仓库克隆到本地去）
-    * cd /d  进入d盘
-    * mkdir 创建本地GitHub文件夹
-    * 将GitHub上的仓库克隆到本地 Git clone ssh 地址
+  查看是否关联上： git *remote -v*  
   
-* 从本地上传文件到GitHub上
-    * git add    将工作区创建的文件添加到暂存区
-  * git commit  -m " 测试"   将暂存区的内容提交到仓库区
-    * git push origin master  将仓库区的内容推送到远程仓库Github上
-
+  * 在d盘上新建文件夹（或者将本地仓库克隆到本地去）
     
+    * cd /d  进入d盘
+  * mkdir 创建本地GitHub文件夹
+  * 将GitHub上的仓库克隆到本地 Git clone ssh 地址
+  
+  * 从本地上传文件到GitHub上
+  * git add    将工作区创建的文件添加到暂存区
+    * git commit  -m " 测试"   将暂存区的内容提交到仓库区
+  * git push origin master  将仓库区的内容推送到远程仓库Github上
+  
+  
 
 * 将Github的仓库克隆到本地来
 * 将本地仓库修改提交到Github仓库
