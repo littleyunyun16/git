@@ -1,5 +1,7 @@
 ### Git使用
 
+![](d:\Users\Desktop\2018122323213594.png)
+
 * 创建项目的SSH Key
 
   1. 配置用户名：**git config --global user.name**  （github上注册的用户名
@@ -20,24 +22,32 @@
 
   * 复制仓库的ssh地址（不要复制https地址，踩过坑）
 
-  * 在d盘上新建文件夹（或者将本地仓库克隆到本地去）
-  * cd /d  进入d盘
+    关联远程库
+
+    ```git
+    $ git remote add origin git@github.com:michaelliao/learngit.git
+    ```
+  
+* 在d盘上新建文件夹（或者将本地仓库克隆到本地去）
+    * cd /d  进入d盘
     * mkdir 创建本地GitHub文件夹
     * 将GitHub上的仓库克隆到本地 Git clone ssh 地址
   
-  * 从本地上传文件到GitHub上
-  * git add    将工作区创建的文件添加到暂存区
-    * git commit  -m " 测试"   将暂存区的内容提交到仓库区
+* 从本地上传文件到GitHub上
+    * git add    将工作区创建的文件添加到暂存区
+  * git commit  -m " 测试"   将暂存区的内容提交到仓库区
     * git push origin master  将仓库区的内容推送到远程仓库Github上
-  
-    
 
+    
 
 * 将Github的仓库克隆到本地来
 * 将本地仓库修改提交到Github仓库
   * git status    查看仓库当前的状态，是否有被修改过
   * git diff   查看具体被修改的内容  按q退出
-  * 
+  * 若有修改 可以通过git add .      git  add   commit  -m  “ ”
+
+*  版本回退
+* 
 
 
 
@@ -104,9 +114,9 @@ https://www.cnblogs.com/zhuzhiwei-2019/p/10951141.html
 
   解决方法：是因为unix系统与windows系统跨平台问题导致，执行git config core.autocrlf false后，再提交就不会报错了。
 
-* # push到github时，每次都要输入用户名和密码的问题
+* push 到GitHub时，每次都要登录GitHub
 
-  https://blog.csdn.net/gatieme/article/details/45033349
+https://blog.csdn.net/gatieme/article/details/45033349
 
 
 
